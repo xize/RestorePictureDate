@@ -3,7 +3,7 @@
 
 ## What does it?
 Currently this program restores creation dates and modified dates by extracting this information from the metadata (EXIF).
-Because the normal copy and paste behaviour in Windows can easily destroy the creation date, or modified date of a file just by moving or copying, if someone wants to place back the photos the ordering is broken.
+Because the normal copy and paste behaviour in Windows can easily destroy the creation date, or modified date of a file just by moving or copying, if someone wants to place back the photos the ordering is otherwise broken, this program is designed to try to fix this problem.
 
 ## NOTE this is important:
 if you experience problems with a disabled button inside the filebrowser controls, likely you try to copy files directly from a device which doesn't use normal copy and paste streams,
