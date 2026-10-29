@@ -156,6 +156,8 @@ namespace RestorePictureDate
                                    File.Copy(filepath, output_path = this.rootpath + Path.DirectorySeparatorChar + "OUTPUT" + Path.DirectorySeparatorChar + Path.GetFileName(filepath));
                                    File.SetCreationTime(output_path, date.Value);
                                    File.SetLastWriteTime(output_path, date.Value);
+                               } catch(IOException e) { 
+                                   //ignore throw, because this is likely 100% the same file into a other folder with the same name.
                                } catch(Exception e)
                                {
                                    throw;
