@@ -108,7 +108,8 @@ namespace RestorePictureDate
                                this.metaerr++;
                                this.win.Invoke(new MethodInvoker(() =>
                                {
-                                   cwin.richTextBox1.AppendText("[" + DateTime.Now.ToString("G") + "]: " + "unable to find metadata for file " + filepath + ", skipping!" + "\n\n"); 
+                                   cwin.richTextBox1.AppendText("[" + DateTime.Now.ToString("G") + "]: " + "unable to find metadata for file " + filepath + ", skipping!" + "\n\n");
+                                   cwin.richTextBox1.Update();
                                }));
                                //MessageBox.Show("This file: "+filepath+" does not have the proper metadata tag set.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                
